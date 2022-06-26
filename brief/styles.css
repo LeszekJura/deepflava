@@ -1,0 +1,79 @@
+/* FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@200;400;600&display=swap');
+
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: rgb(255,255,255);
+  background: linear-gradient(180deg, rgba(255,255,255,1) 2%, rgba(98,201,191,1) 89%);
+}
+
+h1 {
+  font-family: 'Prompt', sans-serif;
+  font-weight: 600;
+  font-size: 32px;
+  margin-left: 4%;
+}
+
+h2 {
+  font-family: 'Prompt', sans-serif;
+  font-weight: 400;
+  font-size: 28px;
+}
+
+.logoimg {
+ display: block;
+ width: auto;
+ position: relative;
+ margin: 20px 70px;
+}
+
+.colors,
+.fonts,
+.textstyles {
+  position: relative;
+  margin: 10px auto;
+  padding: 10px 10px;
+  width: 90%;
+  border: 1px solid #4F2F04;
+  background-color: #FFF;
+}
+
+#colorbox1,
+#colorbox2,
+#colorbox3,
+#colorbox4,
+#colorbox5 {
+  display: inline-block;
+  position: relative;
+  height: 180px;
+  width: 240px;
+  margin: 20px 20px;
+  padding: 20px 0px;
+  border: 1px solid black;
+  font-family: 'Prompt', sans-serif;
+  font-weight: 400;
+  text-align: center;
+  color: #000;
+}
+
+#colorbox1 {
+  background-color: #FFF;
+}
+
+#colorbox2 {
+  background-color: #62C9BF;
+}
+
+#colorbox3 {
+  background-color: #4FC9BD;
+}
+
+#colorbox4 {
+  background-color: #A077C9;
+}
+
+#colorbox5 {
+  background-color: #8E8E8E;
+}

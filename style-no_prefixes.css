@@ -1,0 +1,562 @@
+/* FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@200;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Viga&display=swap');
+
+/*GENERAL STYLES*/
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+h2 {
+  font-family: 'Viga', sans-serif;
+  font-size: 2.6rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  color: #4FC9BD;
+  text-align: center;
+  margin: 0.6rem;
+}
+
+h3 {
+  font-family: "Prompt", sans-serif;
+  font-size: 2.2rem;
+  text-transform: uppercase;
+  color: #000;
+  text-align: center;
+  margin: 1rem;
+}
+
+h4 {
+  font-family: "Prompt", sans-serif;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  color: #000;
+  text-align: center;
+  margin: 1rem;
+}
+
+/*NAV SECTION*/
+.header {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  background-color: #FFF;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  min-height: 10vh;
+  max-height: 10vh;
+  min-width: 100%;
+}
+
+#check {
+  display: none;
+}
+
+#check:checked~.nav {
+  bottom: 0%;
+}
+
+#checkbtn {
+  fill: #000;
+  cursor: pointer;
+  margin-top: 0.45rem;
+}
+
+.logo,
+.logoM {
+  font-family: 'Viga', sans-serif;
+  font-size: 2.8rem;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  color: #000;
+  margin: 0 1rem;
+}
+
+.logo a,
+.logoM a {
+  text-decoration: none;
+  color: #000;
+  transition: 0.4s ease-in-out;
+}
+
+.logo a:hover,
+.logoM a:hover {
+  color: #4FC9BD;
+}
+
+.nav {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  width: auto;
+  margin: 0 0.6rem;
+}
+
+.nav a {
+  font-family: "Prompt", sans-serif;
+  color: #000;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  transition: 0.4s ease-in-out;
+  padding: 0 1rem;
+}
+
+.nav a:not(:last-child) {
+  padding-right: 1rem;
+}
+
+.nav a::before {
+  content: "";
+  width: 0%;
+  display: block;
+  border-bottom: 2px solid #4FC9BD;
+  transition: 0.4s ease-in-out;
+}
+
+.nav a:hover:before {
+  width: 100%;
+}
+
+.nav a:hover,
+.nav a:active {
+  color: #4FC9BD;
+}
+
+.flag {
+  width: 50%;
+  height: auto;
+  border-radius: 2px;
+  transition: 0.2s ease-in;
+}
+
+.flag:hover {
+  transform: scale(140%);
+}
+
+/*MAIN HEADER SECTION*/
+
+.mainheader,
+.mainheaderM {
+  position: relative;
+  top: 10vh;
+  max-width: 100%;
+  max-height: auto;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.mainheader img,
+.mainheaderM img {
+  position: relative;
+  max-width: 100%;
+}
+
+.heroheaders,
+.heroheadersM {
+  position: relative;
+  top: 10vh;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  width: 100%;
+  height: auto;
+}
+
+.heroheaders p,
+.heroheadersM p {
+  font-size: 1.5rem;
+  font-family: "Prompt", sans-serif;
+  text-transform: uppercase;
+  margin: 1rem auto;
+}
+
+/*ABOUT US page*/
+
+.aboutusXL {
+  position: relative;
+  top: 10vh;
+  margin: 0 auto 1.6rem auto;
+  background-image: url(image/DF_aboutus.jpg);
+  max-width: 100%;
+  max-height: auto;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.aboutusM {
+  position: relative;
+  top: 10vh;
+  margin: 0 auto 1rem auto;
+  background-image: url(image/DF_aboutusM.jpg);
+  max-width: 100%;
+  max-height: auto;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.aboutusXL img,
+.aboutusM img {
+  position: relative;
+  max-width: 80%;
+}
+
+.aboutus_text {
+  margin: 1rem;
+  max-width: 80%;
+  display: block;
+  text-align: justify;
+  font-style: "Prompt", sans-serif;
+  font-size: 1.2rem;
+  color: white;
+}
+
+/*Menu pics section*/
+
+.menupics {
+  position: relative;
+  top: 10vh;
+  min-width: 10%;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  background-image: url(image/DF_mainmenu_bg_01.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.video {
+  position: relative;
+  background-image: url(image/DF_mainmenu_videos.jpg);
+  background-size: 100%;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  margin: 1.6rem;
+  width: 280px;
+  height: 280px;
+  transition: 1s;
+  border-radius: 5px;
+}
+
+.djsets {
+  position: relative;
+  background-image: url(image/DF_mainmenu_djset.jpg);
+  background-size: 100%;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  margin: 1.6rem;
+  width: 280px;
+  height: 280px;
+  transition: 1s;
+  border-radius: 5px;
+}
+
+.tracks {
+  position: relative;
+  background-image: url(image/DF_mainmenu_audio.jpg);
+  background-size: 100%;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  margin: 1.6rem;
+  width: 280px;
+  height: 280px;
+  transition: 1s;
+  border-radius: 5px;
+}
+
+.video p,
+.djsets p,
+.tracks p {
+  font-family: 'Prompt', sans-serif;
+  color: #000;
+  text-decoration: none;
+  text-transform: uppercase;
+  background-color: #FFF;
+  font-size: 1.5rem;
+  display: flex;
+  width: 100%;
+  height: 3rem;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.video:hover {
+  background-size: 120%;
+  background-position: center;
+}
+
+.djsets:hover {
+  background-size: 120%;
+  background-position: center;
+}
+
+.tracks:hover {
+  background-size: 120%;
+  background-position: center;
+}
+
+
+.highlight {
+  color: #4FC9BD
+}
+
+/*FOOTER SECTION*/
+
+.footer {
+  position: relative;
+  top: 10vh;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  min-height: 10vh;
+  max-height: 10vh;
+}
+
+.footer p {
+  font-family: "Prompt", sans-serif;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  margin: 0 auto;
+}
+
+.links {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.links a {
+  margin: 0rem 3rem;
+  transition: 0.5s ease-in-out;
+  filter: grayscale(1);
+}
+
+.links a:hover {
+  filter: grayscale(0);
+}
+
+/*TRACKS page*/
+
+.tracksbg {
+  position: relative;
+  top: 10vh;
+  margin: 0 auto;
+  background-image: url(image/DF_backpic_XL.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.trackssc {
+  margin: 1rem;
+  background-color: black;
+  border-radius: 5px;
+  max-width: 100%;
+  min-width: 20%;
+}
+
+/*SETS page*/
+
+.setsbg {
+  position: relative;
+  top: 10vh;
+  margin: 0 auto;
+  background-image: url(image/DF_backpic_XL.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-flow: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.setsmix {
+  margin-top: 1rem;
+  background-color: black;
+  border-radius: 4px;
+  max-width: 80%;
+  min-width: 60%;
+}
+
+/*VIDEOS page*/
+
+.videosbg {
+  position: relative;
+  top: 10vh;
+  margin: 0 auto;
+  background-image: url(image/DF_backpic_XL.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.videoYT {
+  margin-top: 1rem;
+  margin-right: 1rem;
+  padding: 0;
+}
+
+.videoYT iframe {
+  min-width: 560px;
+  min-height: 315px;
+}
+
+
+/*MEDIA QUERIES*/
+
+@media only screen and (max-width: 702px) {
+  h2 {
+    color: #000;
+    font-size: 1.6rem;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  .logoM {
+    font-size: 2.2rem;
+    margin: 0;
+  }
+
+  .header {
+    justify-content: space-around;
+  }
+
+  .mainheader {
+    display: none;
+  }
+
+  .heroheaders {
+    display: none;
+  }
+
+  .heroheadersM {
+    flex-direction: row;
+  }
+
+  .aboutusXL {
+    display: none;
+  }
+
+  .menupics {
+    background-image: url(image/DF_mainmenu_bg_01_M.jpg);
+  }
+
+  .video,
+  .djsets,
+  .tracks {
+    margin: 0.6rem;
+  }
+
+  .nav {
+    position: fixed;
+    z-index: -1;
+    display: block;
+    width: 100%;
+    height: 84vh;
+    text-align: center;
+    bottom: -100%;
+    transition: all 0.4s;
+    background-color: #FFF;
+    padding: 0;
+    margin: 0;
+  }
+
+  .nav a {
+    display: block;
+    margin: 3rem auto;
+    padding: 0.6rem;
+    text-align: center;
+  }
+
+  .nav a::before {
+    content: none;
+  }
+
+  .links a {
+    margin: 0rem 1.2rem;
+  }
+
+  .videoYT {
+    margin-top: 0.8rem;
+    margin-right: 0.4rem;
+  }
+
+  .videoYT iframe {
+    min-width: 300px;
+    min-height: 180px;
+  }
+}
+
+@media only screen and (min-width: 703px) {
+  .logoM {
+    display: none;
+  }
+
+  .mainheaderM {
+    display: none;
+  }
+
+  .heroheadersM {
+    display: none;
+  }
+
+  .aboutusM {
+    display: none;
+  }
+
+  #checkbtn {
+    display: none;
+  }
+}
